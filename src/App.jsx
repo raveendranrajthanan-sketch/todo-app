@@ -1,5 +1,14 @@
-function App() {
-  return <h1>My Todo App</h1>;
-}
+import Header from "./components/Header";
+import TodoForm from "./components/TodoForm";
+import TodoList from "./components/TodoList";
 
+function App(){
+  return (
+    <main className="app">
+      <Header/>
+      <TodoForm/>
+      <TodoList/>
+    </main>
+  );
+}
 export default App;
