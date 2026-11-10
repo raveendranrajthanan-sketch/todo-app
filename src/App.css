@@ -182,3 +182,13 @@
     border-right-color: var(--border);
   }
 }
+.priority-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 3px 8px;
+  background-color: #dc2626;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 12px;
+}

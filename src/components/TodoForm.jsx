@@ -1,9 +1,12 @@
 function TodoForm() {
   return (
     <form className="todo-form">
-      <label htmlFor="task">New task</label>
-      <input id="task" type="text" />
-      <button type="submit">Add</button>
+      <input  type="text"
+              placeholder="Enter a new task"
+      />
+      <button type="submit">
+        Add Task
+      </button>
     </form>
   );
 }

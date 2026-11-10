@@ -1,11 +1,22 @@
-function TodoList() {
+import TodoItem from "./TodoItem";
+
+function TodoList({ todos }) {
   return (
-    <ul>
-      <li>Read React docs</li>
-      <li>Build Todo shell</li>
-      <li>Commit my work</li>
-    </ul>
-  );
+  <ul className="todo-list">
+    {todos.length === 0 && (
+      <p>No tasks yet</p>
+    )}
+
+    {todos.map((todo) => (
+      <TodoItem
+        key={todo.id}
+        text={todo.text}
+        done={todo.done}
+        priority={todo.priority}
+      />
+    ))}
+  </ul>
+);
 }
 
 export default TodoList;

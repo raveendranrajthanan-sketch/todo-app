@@ -1,8 +1,8 @@
-function Header() {
+function Header({title,subtitle}) {
   return (
-    <header>
-      <h1>My Todo App</h1>
-      <p>Plan your day, one task at a time</p>
+    <header className="app-header">
+      <h1>{title}</h1>
+      <p>{subtitle}</p>
     </header>
   );
 }
